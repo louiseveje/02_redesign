@@ -96,6 +96,24 @@ img {
   position: fixed;
 }
 
+@media (max-width: 600px) {
+  .main-menu.shown ul {
+    padding-top: 5.2rem;
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+
+    margin-left: -21px;
+    margin-top: 67px;
+
+    background-image: url(billeder/menu_baggrund.png);
+    background-size: cover;
+    width: 100px;
+    aspect-ratio: 1/1;
+    position: fixed;
+  }
+}
+
 .video img {
   grid-area: 1 / 1;
 }
@@ -112,7 +130,7 @@ img {
   margin-top: -57px;
 }
 
-article {
+.content_1 {
   background-image: url(billeder/background_yellow.png);
   height: 63vh;
   width: 100%;
@@ -120,7 +138,7 @@ article {
   margin-top: 30px;
 }
 
-.content h1 {
+.content_1 h1 {
   padding-left: 550px;
   padding-top: 100px;
   font-family: Open Sans;
@@ -128,7 +146,7 @@ article {
   color: #fc49b8;
   font-weight: bold;
 }
-.content p {
+.content_1 p {
   padding-left: 450px;
   padding-top: 10px;
   font-family: Open Sans;
@@ -136,9 +154,39 @@ article {
   color: #fc49b8;
 }
 
-article img {
+.content_1 img {
   width: 300px;
   position: absolute;
   left: 1000px;
   top: 1000px;
+}
+
+.social_media {
+  background-image: url(billeder/nipples.png);
+
+  height: 30vh;
+  background-size: cover;
+  margin-top: 120px;
+}
+
+.content_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.media img {
+  width: 300px;
+  margin-left: 180px;
+}
+
+.text img {
+  width: 200px;
+}
+
+.text {
+  font-family: open sans;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 35px;
+  font-weight: bold;
 }
