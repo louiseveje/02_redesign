@@ -95,3 +95,19 @@ img {
   aspect-ratio: 1/1;
   position: fixed;
 }
+
+.video img {
+  grid-area: 1 / 1;
+}
+
+.video {
+  grid-column: 2;
+
+  display: grid;
+}
+
+.shop_btn {
+  width: 130px;
+  margin-left: 1000px;
+  margin-top: -57px;
+}
