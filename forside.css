@@ -111,3 +111,34 @@ img {
   margin-left: 1000px;
   margin-top: -57px;
 }
+
+article {
+  background-image: url(billeder/background_yellow.png);
+  height: 63vh;
+  width: 100%;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+.content h1 {
+  padding-left: 550px;
+  padding-top: 100px;
+  font-family: Open Sans;
+  font-size: 2rem;
+  color: #fc49b8;
+  font-weight: bold;
+}
+.content p {
+  padding-left: 450px;
+  padding-top: 10px;
+  font-family: Open Sans;
+  font-size: 2rem;
+  color: #fc49b8;
+}
+
+article img {
+  width: 300px;
+  position: absolute;
+  left: 1000px;
+  top: 1000px;
+}
