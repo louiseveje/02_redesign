@@ -2,3 +2,180 @@
 body {
   background-color: #f2c4ab;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 300px;
+  display: flex;
+  justify-self: center;
+}
+
+.cart {
+  width: 50px;
+  display: flex;
+  justify-self: end;
+}
+
+/*kode til burgermenu */
+.banner {
+  padding: 2rem;
+  /* lav et grid af header*/
+  display: grid;
+  /* få logo til at fylde 300px*/
+  grid-template-columns: 1fr minmax(0, 300px) 1fr;
+}
+
+/*fjern list style*/
+.main-menu ul {
+  list-style: none;
+}
+
+/* burgermenu */
+.toggle-btn {
+  border: none;
+  width: 60px;
+  cursor: pointer;
+
+  background-color: #f2c4ab;
+  justify-self: start;
+
+  position: fixed;
+}
+
+.toggle-btn {
+  display: block; /* Vis knappen */
+}
+
+@media (max-width: 600px) {
+  .main-menu ul {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    width: 50px;
+    display: flex;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 200px;
+    display: flex;
+    justify-self: center;
+  }
+
+  .cart {
+    width: 40px;
+    display: flex;
+    justify-self: end;
+  }
+}
+
+.main-menu ul {
+  display: none; /* Fjern menu-listen som standard */
+  padding: 67px;
+}
+
+.main-menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  padding-top: 5.2rem;
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+
+  margin-left: 97px;
+  margin-top: -15px;
+
+  background-image: url(billeder/menu_baggrund.png);
+  background-size: cover;
+  width: 100px;
+  aspect-ratio: 1/1;
+  position: fixed;
+}
+
+@media (max-width: 600px) {
+  .main-menu.shown ul {
+    padding-top: 5.2rem;
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+
+    margin-left: -21px;
+    margin-top: 67px;
+
+    background-image: url(billeder/menu_baggrund.png);
+    background-size: cover;
+    width: 100px;
+    aspect-ratio: 1/1;
+    position: fixed;
+  }
+}
+
+footer {
+  background-color: #6eaaf6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+footer img {
+  width: 300px;
+}
+
+.logo_footer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+
+.kontakt {
+  color: white;
+  padding-right: 40px;
+  font-size: 1.5rem;
+  font-family: open + sans;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding-left: 170px;
+}
+
+@media (max-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer img {
+    width: 170px;
+    padding-bottom: 5px;
+  }
+
+  .kontakt {
+    font-size: 1rem;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer img {
+    width: 100px;
+    padding-bottom: 10px;
+  }
+
+  .kontakt {
+    font-size: 0.7rem;
+    padding-left: 100px;
+  }
+}
