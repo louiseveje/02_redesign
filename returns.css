@@ -1,0 +1,33 @@
+/** @format */
+
+main {
+  display: grid;
+  grid-template-rows: minmax(200px) minmax(100px);
+}
+
+h1 {
+  justify-self: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #aa0f56;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+p {
+  justify-self: center;
+  max-width: 60ch;
+  font-family: "Courier New", Courier, monospace;
+  color: #640932;
+  font-weight: 1.5rem;
+  line-height: 25px;
+  padding-top: 30px;
+  padding-bottom: 168px;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 30px;
+  }
+}
