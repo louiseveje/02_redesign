@@ -41,7 +41,9 @@ img {
 
   display: grid;
 }
-
+.lady {
+  margin-bottom: -6px;
+}
 /* media query ipad version*/
 
 @media (min-width: 900px) {

@@ -2,10 +2,22 @@
 img {
     width: 100%;
 }
+.about_svg_container {
+    display: flex;
+    justify-content: center;
+}
+.about_svg {
+    width: 74px;
+}
+article {
+    margin-bottom: 20px;
+}
 h1 {
     text-align: center;
     font-family:'Courier New', Courier, monospace;
     color: #AA0F56;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 p {
     font-family:'Courier New', Courier, monospace;
@@ -50,7 +62,10 @@ p {
 }
 
 @media only screen and (max-width: 1050px) {
-.container1 {
+    .about_svg {
+        width: 90px;
+    }
+    .container1 {
     margin-bottom: 15px;
 }
 .billede1 {
@@ -77,7 +92,11 @@ p {
 }
             
 @media only screen and (min-width: 1050px) {
-.container1 {
+    .about_svg {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
