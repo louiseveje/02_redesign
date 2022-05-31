@@ -58,6 +58,7 @@ img {
 
 .toggle-btn {
   display: block; /* Vis knappen */
+  z-index: 1;
 }
 
 @media (max-width: 600px) {
