@@ -1,139 +1,125 @@
-/** @format */
 
+section {
+  margin: 38px;
+}
 img {
   width: 100%;
+  border-radius: 41px;
 }
-
-.logo {
-  width: 300px;
-  display: flex;
-  justify-self: center;
+section img:hover {
+  box-shadow: 0 2px 10px 0 #FFFAD3;
+  opacity: 60%;
 }
-
-.cart {
-  width: 50px;
-  display: flex;
-  justify-self: end;
+section img:active {
+  background-color: #AA0F56;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+  opacity: 60%;
 }
-
-/*kode til burgermenu */
-.banner {
-  padding: 2rem;
-  /* lav et grid af header*/
-  display: grid;
-  /* få logo til at fylde 300px*/
-  grid-template-columns: 1fr minmax(0, 300px) 1fr;
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #AA0F56;
+  font-family:'Courier New', Courier, monospace;
 }
-
-/*fjern list style*/
-.main-menu ul {
-  list-style: none;
-}
-
-/* burgermenu */
-.toggle-btn {
-  border: none;
-  width: 60px;
+/************ knap ***********/
+.knap_produkt {
+  border-radius: 51px;
+  width: 168px;
+  height: 65px;
+  display: inline-block;
   cursor: pointer;
+  background-color: #FB95C3;
 
-  background-color: #f2c4ab;
-  justify-self: start;
-
-  position: fixed;
+  color: white;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
 }
-
-.toggle-btn {
-  display: block; /* Vis knappen */
+.knap_produkt:hover {
+  box-shadow: 0 2px 10px 0 #FFFAD3;
 }
-
-@media (max-width: 600px) {
-  .main-menu ul {
-    display: none;
-  }
+.knap_produkt:active {
+  background-color: #AA0F56;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
 }
-
-@media (max-width: 600px) {
-  .toggle-btn {
-    width: 50px;
-    display: flex;
-    justify-self: start;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    width: 200px;
-    display: flex;
-    justify-self: center;
-  }
-
-  .cart {
-    width: 40px;
-    display: flex;
-    justify-self: end;
-  }
-}
-
-.main-menu ul {
-  display: none; /* Fjern menu-listen som standard */
-  padding: 67px;
-}
-
-.main-menu.shown ul {
-  /* Vis menu-listen, når klassen ".shown" er til stede */
-  padding-top: 5.2rem;
+/* ************ main ************** */
+@media (max-width: 800px) {
+.vare1_container {
   display: flex;
-  flex-flow: column;
-  justify-self: center;
-
-  margin-left: 97px;
-  margin-top: -15px;
-
-  background-image: url(billeder/menu_baggrund.png);
-  background-size: cover;
-  width: 100px;
-  aspect-ratio: 1/1;
-  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
+.vare2_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
+.vare3_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
+.vare4_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
+.vare5_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
 }
 
-@media (max-width: 600px) {
-  .main-menu.shown ul {
-    padding-top: 5.2rem;
-    display: flex;
-    flex-flow: column;
-    justify-self: center;
+@media (min-width: 800px) {
 
-    margin-left: -21px;
-    margin-top: 67px;
-
-    background-image: url(billeder/menu_baggrund.png);
-    background-size: cover;
-    width: 100px;
-    aspect-ratio: 1/1;
-    position: fixed;
-  }
+/* ********** containers *********** */
+.container1 {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 
-.produkter_1_2_3 img {
-  width: 220px;
+.vare1_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.produkter_1_2_3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  margin-left: 169px;
-  margin-top: 20px;
+.vare2_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.produkter_4_5 img {
-  width: 220px;
+.vare3_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.produkter_4_5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  margin-left: 310px;
-  margin-top: 200px;
+.container2 {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+.container2 img {
+  width: 278px;
+}
+.vare4_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vare5_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 }

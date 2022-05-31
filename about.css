@@ -1,0 +1,143 @@
+/* ************ main ************** */
+img {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: #AA0F56;
+}
+p {
+    font-family:'Courier New', Courier, monospace;
+    color: #AA0F56;
+    text-align: center;
+    word-spacing: 0.2rem;
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin: 10px;
+}
+.container2 p {
+    color: rgb(42, 36, 36);
+}
+/* ********** section *********** */
+@media only screen and (max-width: 750px) {
+
+    .container1 {
+        margin-bottom: 15px;
+    
+    }
+    .billede1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    
+    .container2 {
+        background-color: #f785ec;
+        margin: -8px;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+    .img_3 {
+        width: 0px;
+    }
+    
+    .billede4 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    }
+
+@media only screen and (max-width: 1050px) {
+.container1 {
+    margin-bottom: 15px;
+}
+.billede1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.container2 {
+    background-color: #f785ec;
+    margin: -8px;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+.img_3 {
+    width: 0px;
+}
+
+.billede4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+}
+            
+@media only screen and (min-width: 1050px) {
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+.tekst1  {
+    margin: 35px;
+    margin-top: 10px;
+}
+.img_1 {
+    width: 413px;
+    display: block;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+.billede2 {
+    position: relative;
+    width: 233px; 
+    left: 56%;
+    top: -78%;
+    z-index: 1; 
+}
+.img2 {
+    position: absolute;
+    object-fit: contain;
+}
+
+/* ********** container 2 *********** */
+.container2 {
+    background-color: #f785ec;
+    margin: -8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.billede3 {
+    rotate: -9deg;
+    width:320px;
+    margin-left:22px;
+    float: left;
+    margin-top: -55px;
+}
+.img3 {
+    width: 320px;
+}
+/* ********** container 3 *********** */
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+    margin-top: 119px;
+    margin-left: 20px;
+}
+.tekst3 {
+    max-width: 600px;
+}
+.billede4 {
+    width: 450px;
+    margin-top: 3rem;
+    float: left;
+}
+} 
+
+ 
