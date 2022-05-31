@@ -22,32 +22,32 @@ p {
 /* ********** section *********** */
 @media only screen and (max-width: 750px) {
 
-    .container1 {
-        margin-bottom: 15px;
-    
-    }
-    .billede1 {
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-    }
-    
-    .container2 {
-        background-color: #f785ec;
-        margin: -8px;
-        gap: 10px;
-        padding-bottom: 5px;
-    }
-    .img_3 {
-        width: 0px;
-    }
-    
-    .billede4 {
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-    }
-    }
+.container1 {
+    margin-bottom: 15px;
+
+}
+.billede1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.container2 {
+    background-color: #f785ec;
+    margin: -8px;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+.img_3 {
+    width: 0px;
+}
+
+.billede4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+}
 
 @media only screen and (max-width: 1050px) {
 .container1 {
