@@ -92,10 +92,10 @@ p {
 }
             
 @media only screen and (min-width: 1050px) {
-    .about_svg {
-        width: 120px;
-        margin-bottom: 10px;
-    }
+.about_svg {
+    width: 120px;
+    margin-bottom: 30px;
+}
     .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,7 +106,7 @@ p {
     margin-top: 10px;
 }
 .img_1 {
-    width: 413px;
+    width: 400px;
     display: block;
     margin-left: 1rem;
     margin-right: auto;

@@ -1,0 +1,90 @@
+/* ************ main ************** */
+section img  {
+    width: 100%;
+    border-radius: 41px;
+}
+section {
+    margin: 38px;
+}
+h1 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: #AA0F56;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+p {
+    font-family:'Courier New', Courier, monospace;
+    color: #AA0F56;
+    word-spacing: 0.2rem;
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin: 10px;
+}
+
+/************ knap ***********/
+.knap_produkt {
+    border-radius: 51px;
+    width: 168px;
+    height: 65px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #FB95C3;
+  
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+  }
+  .knap_produkt:hover {
+    box-shadow: 0 2px 10px 0 #FFFAD3;
+  }
+  .knap_produkt:active {
+    background-color: #AA0F56;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+  }
+  /* ************ main ************** */
+  @media (min-width: 800px) {
+    section img  {
+        width: 70%;
+        border-radius: 41px;
+    }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .vare_img_container {
+    text-align: center;
+}
+  }
+
+  @media (max-width: 800px) {
+    section {
+        margin: 3px;
+    }
+    section img  {
+        width: 60%;
+        border-radius: 41px;
+    }
+    .vare_img_container {
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px;
+        text-align: center;
+    }
+    .knap_produkt {
+        margin: 10px;
+    }
+}
