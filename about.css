@@ -45,10 +45,11 @@ p {
 }
 
 .container2 {
-    background-color: #f785ec;
+    background-color: #f785ec9e;
     margin: -8px;
     gap: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 .img_3 {
     width: 0px;
@@ -75,10 +76,11 @@ p {
 }
 
 .container2 {
-    background-color: #f785ec;
+    background-color: #f785ec9e;
     margin: -8px;
     gap: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 .img_3 {
     width: 0px;
@@ -125,10 +127,11 @@ p {
 
 /* ********** container 2 *********** */
 .container2 {
-    background-color: #f785ec;
+    background-color: #f785ec9e;
     margin: -8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 
 .billede3 {

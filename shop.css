@@ -45,43 +45,80 @@ h1 {
   transform: translateY(3px);
 }
 /* ************ main ************** */
-@media (max-width: 800px) {
+@media (max-width: 670px) {
 section img {
   width: 300px;
 }
+.container1 {
+  text-align: center;
+  gap: 20px;
+}
 .vare1_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-}
-.vare2_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-}
-.vare3_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-}
-.vare4_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-}
-.vare5_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 12px;
-}
+  display: contents;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-@media (min-width: 800px) {
+.vare1_container img {
+width: 100%;
+height: auto;
+}
+
+
+.vare2_container {
+  display: contents;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.vare2_container img {
+  width: 100%;
+  height: auto;
+  }
+.vare3_container {
+  display: contents;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.vare3_container img {
+  width: 100%;
+  height: auto;
+  }
+.container2 {
+    text-align: center;
+    padding: 10px;
+  }
+.vare4_container {
+  display: contents;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  gap: 20px;
+}
+.vare4_container img {
+  width: 100%;
+  height: auto;
+  }
+.vare5_container {
+  display: contents;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.vare5_container img {
+  width: 100%;
+  height: auto;
+  }
+}
+
+@media (min-width: 670px) {
 
 /* ********** containers *********** */
 .container1 {
