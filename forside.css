@@ -121,7 +121,7 @@ img {
 
 /*styling*/
 .content_1 {
-  height: 55vh;
+  height: 48vh;
   width: 100%;
   background-size: cover;
   margin-top: 50px;
@@ -399,31 +399,32 @@ img {
     gap: 10px;
     background-color: #f785ec;
   }
+ 
   .text_content h1 {
     font-family:'Courier New', Courier, monospace;
     color: #AA0F56;
-    padding-left: 500px;
-    padding-top: 70px;
-    font-family: Open + Sans;
     font-size: 2rem;
   }
   .text_content p {
     font-family:'Courier New', Courier, monospace;
     color: #AA0F56;
-    margin-left: auto;
-    margin-bottom: 10px;
     font-size: 1.1rem;
     grid-column: 3 / span 21;
     line-height: 25px;
   }
+  .text_content{
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin-top: 11%;
+  }
   .text_pin img {
     width: 300px;
+    position: absolute;
+    top: -8%;
   }
   .text_pin {
-    position: absolute;
+    position: relative;
     width: 354px;
-    left: 50%;
-    top: 94%;
     rotate: 9deg;
   }
   .flex {
@@ -435,7 +436,6 @@ img {
 @media (min-width: 1200px) {
   .social_media {
     background-image: url(billeder/nipples.png);
-
     height: 30vh;
     background-size: cover;
     margin-top: 120px;
@@ -443,7 +443,7 @@ img {
 
   .content_2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .media img {
@@ -457,9 +457,13 @@ img {
   }
 
   .text {
-    font-family: open + sans;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.3rem;
     line-height: 30px;
+    grid-column: 2 / span 3;
+    display: grid;
+    color: #aa0f56;
+    margin-left: 2%;
   }
 
   .social_knap1 {
@@ -511,5 +515,5 @@ img {
 
 /*styling billede lige før footer*/
 .lady {
-  padding-top: 200px;
+  padding-top: 100px;
 }
