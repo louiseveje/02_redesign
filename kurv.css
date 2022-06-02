@@ -7,10 +7,13 @@ section {
     margin: 38px;
 }
 h1 {
-    font-size: 2rem;
+    justify-self: center;
     text-align: center;
-    color: #AA0F56;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
+    color: #aa0f56;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 40px;
   }
 h2 {
     font-size: 1.5rem;

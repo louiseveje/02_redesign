@@ -2,23 +2,20 @@
 img {
     width: 100%;
 }
-.about_svg_container {
-    display: flex;
-    justify-content: center;
+h1 {
+    justify-self: center;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: #aa0f56;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 40px;
 }
-.about_svg {
-    width: 74px;
-}
+
 article {
     margin-bottom: 20px;
 }
-h1 {
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
-    color: #AA0F56;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+
 p {
     font-family:'Courier New', Courier, monospace;
     color: #AA0F56;

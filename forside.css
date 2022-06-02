@@ -332,7 +332,12 @@ img {
   height: 30vh;
   margin-top: 120px;
 }
-
+  .social_knap1  {
+    width: 150px;
+  }
+  .social_knap2 {
+    width: 150px;
+  }
   .media img {
   width: 130px;
   padding-left: 20px;
@@ -344,10 +349,13 @@ img {
 .text {
   /* background-color: #f5f9b5; */
   text-align: center;
-  margin-bottom: 30px;
-  margin: 1% 0% 0% 30%;
   display: contents;
 }
+.social_media .lady {
+  margin-top: 100px;
+  padding-top: none;
+}
+
 }
 
 /*media query desktop*/

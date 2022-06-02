@@ -25,109 +25,57 @@ img {
   width: 50px;
   display: flex;
   justify-self: end;
+  margin-right: 1%;
 }
 
-/*kode til burgermenu */
-.banner {
-  padding: 2rem;
-  /* lav et grid af header*/
-  display: grid;
-  /* få logo til at fylde 300px*/
-  grid-template-columns: 1fr minmax(0, 300px) 1fr;
-}
-
-/*fjern list style*/
-.main-menu ul {
-  list-style: none;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  justify-content: center;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
 }
 
 /* burgermenu */
-.toggle-btn {
-  border: none;
-  width: 70px;
-  cursor: pointer;
-
-  background-color: #f2c4ab;
+label .menu {
   position: fixed;
-
-  padding: 10px;
-  border-radius: 25px;
-}
-
-.toggle-btn {
-  display: block; /* Vis knappen */
+  left: -40px;
+  top: -40px;
   z-index: 1;
+  width: 130px;
+  height: 130px;
+  background-color: #6eaaf6;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
-@media (max-width: 600px) {
-  .main-menu ul {
-    display: none;
-  }
-  
-}
-
-@media (max-width: 600px) {
-  .toggle-btn {
-    width: 50px;
-    display: flex;
-    justify-self: start;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    width: 200px;
-    display: flex;
-    justify-self: center;
-  }
-
-  .cart {
-    width: 40px;
-    display: flex;
-    justify-self: end;
-  }
+label .hamburger:before { top: -5px; }
+label .hamburger:after { bottom: -5px; }
+label input:checked + .menu {
+  background-color: #f2c4ab;
+  box-shadow: 0 0 0 100vw #6eaaf6, 0 100vh #6eaaf6;
 }
 
-.main-menu ul {
-  display: none; /* Fjern menu-listen som standard */
-  padding: 99px;
-}
-
-.main-menu.shown ul {
-  /* Vis menu-listen, når klassen ".shown" er til stede */
-  padding-top: 7rem;
-  display: flex;
-  flex-flow: column;
-  justify-self: center;
-
-  margin-left: 76px;
-  margin-top: -15px;
-
-  background-image: url(billeder/menu_baggrund.png);
-  background-size: cover;
-  width: 100px;
-  aspect-ratio: 1/1;
+label input:checked + .menu + ul { 
+  opacity: 1; 
   position: fixed;
 }
 
-@media (max-width: 600px) {
-  .main-menu.shown ul {
-    padding-top: 5.2rem;
-    display: flex;
-    flex-flow: column;
-    justify-self: center;
-
-    margin-left: -21px;
-    margin-top: 67px;
-
-    background-image: url(billeder/menu_baggrund.png);
-    background-size: cover;
-    width: 100px;
-    aspect-ratio: 1/1;
-    position: fixed;
-  }
+label ul {
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+label a {
+  margin-bottom: 1em;
+  display: block;
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -156,6 +104,18 @@ footer img {
   grid-column-end: 4;
   padding-left: 130px;
   padding-top: 5px;
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 200px;
+    display: flex;
+    justify-self: center;
+  }
+  .cart {
+    width: 40px;
+    display: flex;
+    justify-self: end;
+  }
 }
 
 @media (min-width: 900px) {
