@@ -394,11 +394,6 @@ img {
 /*styling gul bagground sektion desktop*/
 @media (min-width: 1200px) {
   .content_1 {
-    /* background-image: url(billeder/background_yellow.png);
-    height: 55vh;
-    width: 100%;
-    background-size: cover;
-    margin-top: 50px; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;

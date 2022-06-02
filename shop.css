@@ -16,6 +16,7 @@ section img:active {
   transform: translateY(3px);
   opacity: 60%;
 }
+
 h1 {
   justify-self: center;
   text-align: center;
@@ -52,9 +53,15 @@ h1 {
 section img {
   width: 300px;
 }
+.knap {
+  margin-bottom: 22px;
+}
+.knap_produkt {
+  margin-bottom: 22px;
+}
 .container1 {
   text-align: center;
-  gap: 20px;
+  padding: 2%;
 }
 .vare1_container {
   display: contents;
@@ -65,7 +72,7 @@ section img {
 }
 
 .vare1_container img {
-width: 100%;
+width: 70%;
 height: auto;
 }
 
@@ -78,7 +85,7 @@ height: auto;
   text-align: center;
 }
 .vare2_container img {
-  width: 100%;
+  width: 70%;
   height: auto;
   }
 .vare3_container {
@@ -89,7 +96,7 @@ height: auto;
   text-align: center;
 }
 .vare3_container img {
-  width: 100%;
+  width: 70%;
   height: auto;
   }
 .container2 {
@@ -105,22 +112,21 @@ height: auto;
   gap: 20px;
 }
 .vare4_container img {
-  width: 100%;
+  width: 70%;
   height: auto;
   }
 .vare5_container {
   display: contents;
   position: relative;
-  width: 100%;
+  width: 70%;
   max-width: 400px;
   text-align: center;
 }
 .vare5_container img {
-  width: 100%;
+  width: 70%;
   height: auto;
   }
 }
-
 @media (min-width: 670px) {
 
 /* ********** containers *********** */
