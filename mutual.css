@@ -39,6 +39,9 @@ img {
 /*fjern list style*/
 .main-menu ul {
   list-style: none;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  justify-content: center;
 }
 
 /* burgermenu */
@@ -48,8 +51,6 @@ img {
   cursor: pointer;
 
   background-color: #f2c4ab;
-  justify-self: start;
-
   position: fixed;
 
   padding: 10px;
@@ -60,11 +61,11 @@ img {
   display: block; /* Vis knappen */
   z-index: 1;
 }
-
 @media (max-width: 600px) {
   .main-menu ul {
     display: none;
   }
+  
 }
 
 @media (max-width: 600px) {
@@ -101,7 +102,7 @@ img {
   flex-flow: column;
   justify-self: center;
 
-  margin-left: 97px;
+  margin-left: 76px;
   margin-top: -15px;
 
   background-image: url(billeder/menu_baggrund.png);

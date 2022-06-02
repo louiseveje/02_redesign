@@ -1,0 +1,94 @@
+* {
+    all: unset;
+    display: revert;
+    cursor: revert;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f2c4ab;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo {
+    width: 300px;
+    display: flex;
+    justify-self: center;
+  }
+  
+  .cart {
+    width: 50px;
+    display: flex;
+    justify-self: end;
+  }
+  
+/*kode til burgermenu */
+.banner {
+    padding: 2rem;
+    /* lav et grid af header*/
+    display: grid;
+    /* få logo til at fylde 300px*/
+    grid-template-columns: 1fr minmax(0, 300px) 1fr;
+  }
+
+/* burgermenu */
+
+body {
+  color: #e0e4cc;
+  font-size: 1.2em;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+label .menu {
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background-color: #6eaaf6;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+
+  cursor: pointer;
+  
+}
+
+
+label .hamburger:before { top: -5px; }
+
+label .hamburger:after { bottom: -5px; }
+
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #6eaaf6, 0 100vh #6eaaf6;
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff;
+  font-size: 1.2rem;
+  
+}

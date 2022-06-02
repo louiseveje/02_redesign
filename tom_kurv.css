@@ -1,12 +1,11 @@
 /* ************ main ************** */
-@media (min-width: 700px) {
+@media (min-width: 500px) {
 
 p {
     text-align: center;
     color: #AA0F56;
     font-family:'Courier New', Courier, monospace;
     font-size: 1.5rem;
-    font-weight: bolder;
     margin-bottom: 40px;
 }
 section {
