@@ -1,161 +1,162 @@
-/* ************ main ************** */
+/**
+ * /* ************ main **************
+ *
+ * @format
+ */
+
 img {
-    width: 100%;
+  width: 100%;
 }
 h1 {
-    justify-self: center;
-    text-align: center;
-    font-family: "Courier New", Courier, monospace;
-    color: #aa0f56;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-top: 40px;
+  justify-self: center;
+  text-align: center;
+  font-family: var(--font);
+  color: #aa0f56;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 40px;
 }
 
 article {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 p {
-    font-family:'Courier New', Courier, monospace;
-    color: #AA0F56;
-    text-align: center;
-    word-spacing: 0.2rem;
-    font-size: 1.1rem;
-    line-height: 25px;
-    margin: 10px;
+  font-family: var(--font);
+  color: #aa0f56;
+  text-align: center;
+  word-spacing: 0.2rem;
+  font-size: 1.1rem;
+  line-height: 25px;
+  margin: 10px;
 }
 .container2 p {
-    color: rgb(42, 36, 36);
+  color: rgb(42, 36, 36);
 }
 /* ********** section *********** */
 @media only screen and (max-width: 750px) {
-
-.container1 {
+  .container1 {
     margin-bottom: 15px;
-
-}
-.billede1 {
+  }
+  .billede1 {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-}
+  }
 
-.container2 {
+  .container2 {
     background-color: #f785ec9e;
     margin: -8px;
     gap: 10px;
     margin-bottom: 5px;
     padding: 5px;
-}
-.img_3 {
+  }
+  .img_3 {
     width: 0px;
-}
+  }
 
-.billede4 {
+  .billede4 {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-}
+  }
 }
 
 @media only screen and (max-width: 1050px) {
-    .about_svg {
-        width: 90px;
-    }
-    .container1 {
+  .about_svg {
+    width: 90px;
+  }
+  .container1 {
     margin-bottom: 15px;
-}
-.billede1 {
+  }
+  .billede1 {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-}
+  }
 
-.container2 {
+  .container2 {
     background-color: #f785ec9e;
     gap: 10px;
     margin-bottom: 5px;
     padding: 5px;
-}
-.img_3 {
+  }
+  .img_3 {
     width: 0px;
-}
+  }
 
-.billede4 {
+  .billede4 {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
+  }
 }
-}
-            
+
 @media only screen and (min-width: 1050px) {
-.about_svg {
+  .about_svg {
     width: 120px;
     margin-bottom: 30px;
-}
-    .container1 {
+  }
+  .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
-}
-.tekst1  {
+  }
+  .tekst1 {
     margin: 35px;
     margin-top: 10px;
-}
-.img_1 {
+  }
+  .img_1 {
     width: 400px;
     display: block;
     margin-left: 1rem;
     margin-right: auto;
-}
-.billede2 {
+  }
+  .billede2 {
     position: relative;
-    width: 233px; 
+    width: 233px;
     left: 56%;
     top: -78%;
-    z-index: 1; 
-}
-.img2 {
+    z-index: 1;
+  }
+  .img2 {
     position: absolute;
     object-fit: contain;
-}
+  }
 
-/* ********** container 2 *********** */
-.container2 {
+  /* ********** container 2 *********** */
+  .container2 {
     background-color: #f785ec9e;
     margin: -8px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
-}
+  }
 
-.billede3 {
+  .billede3 {
     rotate: -9deg;
-    width:320px;
-    margin-left:22px;
+    width: 320px;
+    margin-left: 22px;
     float: left;
     margin-top: -55px;
-}
-.img3 {
+  }
+  .img3 {
     width: 320px;
-}
-/* ********** container 3 *********** */
-.container3 {
+  }
+  /* ********** container 3 *********** */
+  .container3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 78px;
     margin-top: 119px;
     margin-left: 20px;
-}
-.tekst3 {
+  }
+  .tekst3 {
     max-width: 600px;
-}
-.billede4 {
+  }
+  .billede4 {
     width: 450px;
     margin-top: 3rem;
     float: left;
+  }
 }
-} 
-
- 

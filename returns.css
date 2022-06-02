@@ -8,7 +8,7 @@ main {
 h1 {
   justify-self: center;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--font);
   color: #aa0f56;
   font-weight: bold;
   font-size: 2rem;
@@ -18,7 +18,7 @@ h1 {
 p {
   justify-self: center;
   max-width: 60ch;
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--font);
   color: #640932;
   font-weight: 1.5rem;
   line-height: 25px;

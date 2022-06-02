@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+/*css-variabler*/
+HTML {
+  --pinkknap: #fb95c3;
+  --blueknap: #6eaaf6;
+  --hoverknapbg: #fffad3;
+  --activeknapbg: #aa0f56;
+  --activeknapshadow: #666;
+  --font: "Courier New", Courier, monospace;
+}
+
 body {
   background-color: #f2c4ab;
 }
@@ -43,21 +53,25 @@ label .menu {
   z-index: 1;
   width: 130px;
   height: 130px;
-  background-color: #6eaaf6;
+  background-color: var(--blueknap);
   border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-label .hamburger:before { top: -5px; }
-label .hamburger:after { bottom: -5px; }
+label .hamburger:before {
+  top: -5px;
+}
+label .hamburger:after {
+  bottom: -5px;
+}
 label input:checked + .menu {
   background-color: #f2c4ab;
   box-shadow: 0 0 0 100vw #6eaaf6, 0 100vh #6eaaf6;
 }
 
-label input:checked + .menu + ul { 
-  opacity: 1; 
+label input:checked + .menu + ul {
+  opacity: 1;
   position: fixed;
 }
 
@@ -67,19 +81,19 @@ label ul {
   top: 20%;
   left: 20%;
   opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
-  transition: .25s 0s ease-in-out;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
 }
 label a {
   margin-bottom: 1em;
   display: block;
-  font-family:'Courier New', Courier, monospace;
+  font-family: var(--font);
   color: #ffffff;
   font-size: 1.2rem;
 }
 
 footer {
-  background-color: #6eaaf6;
+  background-color: var(--blueknap);
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -99,7 +113,7 @@ footer img {
   color: white;
   padding-right: 40px;
   font-size: 0.7rem;
-  font-family: open + sans;
+  font-family: var(--font);
   grid-column-start: 3;
   grid-column-end: 4;
   padding-left: 130px;
@@ -120,7 +134,7 @@ footer img {
 
 @media (min-width: 900px) {
   footer {
-    background-color: #6eaaf6;
+    background-color: var(--blueknap);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -141,7 +155,7 @@ footer img {
     color: white;
     padding-right: 40px;
     font-size: 1.5rem;
-    font-family: open + sans;
+    font-family: var(--font);
     grid-column-start: 3;
     grid-column-end: 4;
     padding-left: 170px;
