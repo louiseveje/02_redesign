@@ -513,3 +513,11 @@ img {
 .lady {
   padding-top: 100px;
 }
+
+video {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 10/4;
+  margin-top: 20px;
+}
