@@ -107,10 +107,11 @@ p {
     margin-top: 10px;
   }
   .img_1 {
-    width: 400px;
+    width: 300px;
     display: block;
     margin-left: 1rem;
     margin-right: auto;
+    margin-top: 49px;
   }
   .billede2 {
     position: relative;
@@ -135,13 +136,13 @@ p {
 
   .billede3 {
     rotate: -9deg;
-    width: 320px;
+    width: 300px;
     margin-left: 22px;
     float: left;
-    margin-top: -55px;
+    margin-top: -13px;
   }
   .img3 {
-    width: 320px;
+    width: 340px;
   }
   /* ********** container 3 *********** */
   .container3 {
@@ -156,7 +157,7 @@ p {
   }
   .billede4 {
     width: 450px;
-    margin-top: 3rem;
+    margin-top: 7rem;
     float: left;
   }
 }
